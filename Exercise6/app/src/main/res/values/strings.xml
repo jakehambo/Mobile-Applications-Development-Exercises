@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Exercise6</string>
+    <string name="subject_name1">Subject Name</string>
+    <string name="subject_number">Subject Number</string>
+    <string name="subject_core">Core</string>
+    <string name="subject_elective">Elective</string>
+    <string name="subject_start_date">Start Date:</string>
+    <string name="subject_list">LIST SUBJECTS</string>
+    <string name="subject_add">ADD SUBJECT</string>
+</resources>

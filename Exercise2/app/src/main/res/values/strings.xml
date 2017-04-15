@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exercise2</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="phone_spinner">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+    </string-array>
+    <string name="title_activity_activity_two">ActivityTwo</string>
+
+</resources>

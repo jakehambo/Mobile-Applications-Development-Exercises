@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:layout_marginBottom="9dp"
+    android:orientation="vertical">
+
+    <!--Linear Layout on the left displaying eta time-->
+    <LinearLayout
+        android:id="@+id/main_activity_adapter_item_eta_linear_layout"
+        android:layout_width="74dp"
+        android:layout_height="match_parent"
+        android:background="@color/arrival_status_color"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <!--The arrival time eta text view-->
+        <TextView
+            android:id="@+id/main_activity_adapter_item_arrival_time_eta_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:textColor="@color/arrival_time_color"
+            android:textStyle="bold" />
+
+        <!--The green linear layout progress bar-->
+        <ProgressBar
+            android:id="@+id/main_activity_adapter_item_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center|center_vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--Linear Layout containing platform, time and status data-->
+    <LinearLayout
+        android:id="@+id/main_activity_adapter_item_platform_time_status_linear_layout"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/main_activity_adapter_item_eta_linear_layout"
+        android:layout_toRightOf="@+id/main_activity_adapter_item_eta_linear_layout"
+        android:orientation="vertical">
+
+        <!--The platform text view-->
+        <TextView
+            android:id="@+id/main_activity_adapter_item_platform_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--The arrival time text view-->
+        <TextView
+            android:id="@+id/main_activity_adapter_item_arrival_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+
+        <!--The status text view-->
+        <TextView
+            android:id="@+id/main_activity_adapter_item_status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <!--Linear Layout containing destination and destination time data-->
+    <LinearLayout
+        android:id="@+id/main_activity_adapter_item_destination_data_linear_layout"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/main_activity_adapter_item_platform_time_status_linear_layout"
+        android:layout_toRightOf="@+id/main_activity_adapter_item_platform_time_status_linear_layout"
+        android:orientation="vertical">
+
+        <!--The destination time text view-->
+        <TextView
+            android:id="@+id/main_activity_adapter_item_destination_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/destination_time_color"
+            android:textStyle="bold" />
+
+        <!--The destination text view-->
+        <TextView
+            android:id="@+id/main_activity_adapter_item_destination_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--The line divider for the recycler view list-->
+    <View
+        android:id="@+id/main_activity_adapter_item_line_view"
+        android:layout_width="match_parent"
+        android:layout_height=".4dp"
+        android:background="@color/colorPrimaryDark" />
+</RelativeLayout>

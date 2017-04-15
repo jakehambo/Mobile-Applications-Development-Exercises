@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id98099815.mad.exercise4.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!--The Text View title at the top of screen-->
+    <TextView
+        android:id="@+id/main_activity_download_Text_View"
+        android:layout_width="367dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/download_TextView"
+        android:textColor="@color/main_activity_text_view_color"
+        android:textSize="12pt" />
+
+    <!--The Spinner for the image selection-->
+    <Spinner
+        android:id="@+id/main_activity_image_selection_spinner"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/main_activity_download_Text_View"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/main_activity_download_Text_View"
+        android:layout_below="@+id/main_activity_download_Text_View"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="35dp" />
+
+    <!--Linear Layout for the download button and download all button located below ImageView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <!--The download Button located to the left of the download all button-->
+        <Button
+            android:id="@+id/main_activity_download_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.5"
+            android:text="@string/download_text" />
+
+        <!--The download all button located to the right of download button-->
+        <Button
+            android:id="@+id/main_activity_download_all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="@string/download_all_text" />
+
+    </LinearLayout>
+
+    <!--The download button located to the left of download all button-->
+    <ImageView
+        android:id="@+id/main_activity_artist_ImageView"
+        android:layout_width="300dp"
+        android:layout_height="1000dp"
+        android:layout_below="@+id/main_activity_image_selection_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/main_activity_apple_rub" />
+
+</RelativeLayout>

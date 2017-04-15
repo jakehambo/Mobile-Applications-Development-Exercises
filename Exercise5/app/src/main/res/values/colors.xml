@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#353333</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#40c784</color>
+    <color name="arrival_time_color">#FFFFFF</color>
+    <color name="arrival_status_color">#21b40b</color>
+    <color name="destination_time_color">#32afc2</color>
+    <color name="status_red">#ff0d00</color>
+    <color name="status_green">#41c22d</color>
+</resources>

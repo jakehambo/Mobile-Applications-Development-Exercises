@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/land_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id98099815.mad.exercise3.ActivityOne"
+    tools:showIn="@layout/activity_one">
+
+    <!-- Main Layout wrapped around all elements so the scroll view can be functional -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!-- The image view at the top of the activity -->
+        <ImageView
+            android:id="@+id/activity_one_think_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/think" />
+
+        <!-- Layout for all the edit text fields below the thumbs up image view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!-- The your_name edit text field below the your thumbs up image view -->
+            <EditText
+                android:id="@+id/activity_one_name_edit_text"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/activity_one_think_image_view"
+                android:layout_marginTop="135dp"
+                android:hint="@string/your_name"
+                android:inputType="textCapSentences"
+                tools:ignore="NotSibling" />
+
+            <!-- The your_phone edit text field below the your_name edit text field -->
+            <EditText
+                android:id="@+id/activity_one_number_edit_text"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/activity_one_name_edit_text"
+                android:layout_marginTop="20dp"
+                android:hint="@string/your_phone"
+                android:inputType="number" />
+
+            <!-- The your_email edit text field below the your_phone edit text field -->
+            <EditText
+                android:id="@+id/activity_one_email_edit_text"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/activity_one_number_edit_text"
+                android:layout_marginTop="20dp"
+                android:hint="@string/your_email"
+                android:inputType="textCapSentences" />
+
+        </RelativeLayout>
+
+        <!-- Bottom of activity above the quit and rotate buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="325dp"
+            android:orientation="horizontal">
+
+            <!-- The clear name button -->
+            <Button
+                android:id="@+id/activity_one_clear_name_button"
+                android:layout_width="720px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/clr_email" />
+
+            <!-- The swap image button -->
+            <Button
+                android:id="@+id/activity_one_swap_image_button"
+                android:layout_width="720px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/swap_image" />
+
+            <!-- The clear email button -->
+            <Button
+                android:id="@+id/activity_one_clear_email_button"
+                android:layout_width="720px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/clr_email" />
+        </LinearLayout>
+
+        <!-- Bottom of activity beneath clear name, swap image and clear email buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="375dp">
+
+            <!-- The rotate button -->
+            <Button
+                android:id="@+id/activity_one_rotate_button"
+                android:layout_width="1150px"
+                android:layout_height="wrap_content"
+                android:text="@string/rotate" />
+
+            <!-- The quit button -->
+            <Button
+                android:id="@+id/activity_one_quit_button"
+                android:layout_width="1150px"
+                android:layout_height="wrap_content"
+                android:text="@string/quit" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

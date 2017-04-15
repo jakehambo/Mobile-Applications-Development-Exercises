@@ -1,0 +1,14 @@
+
+<!-- Strings for activity one -->
+<resources>
+    <string name="app_name">Exercise3</string>
+    <string name="action_settings">Settings</string>
+    <string name="your_name">Your name</string>
+    <string name="your_phone">Your phone</string>
+    <string name="your_email">Your email</string>
+    <string name="clr_name">CLR NAME</string>
+    <string name="swap_image">SWAP IMAGE</string>
+    <string name="clr_email">CLR EMAIL</string>
+    <string name="rotate">Rotate</string>
+    <string name="quit">Quit</string>
+</resources>

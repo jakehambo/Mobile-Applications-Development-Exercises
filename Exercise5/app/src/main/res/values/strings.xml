@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Exercise5</string>
+
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete All</string>
+    <string name="action_quit">Quit</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="refreshing_message">"Refreshing "</string>
+    <string name="status_late">"Late"</string>
+    <string name="eta_min">"\n min"</string>
+
+    <string name="albion_platform">Albion Park Platform 1</string>
+    <string name="albion_arrival_time">14:14</string>
+    <string name="albion_status">On Time</string>
+    <string name="albion_destination">Allawah</string>
+    <string name="albion_destination_time">14:11</string>
+
+    <string name="arncliffe_platform">Arncliffe Platform 2</string>
+    <string name="arncliffe_arrival_time">14:14</string>
+    <string name="arncliffe_status">Late</string>
+    <string name="arncliffe_destination">Central</string>
+    <string name="arncliffe_destination_time">14:34</string>
+
+    <string name="artarmion_platform">Artarmion Platform 3</string>
+    <string name="artarmion_arrival_time">14:14</string>
+    <string name="artarmion_status">On Time</string>
+    <string name="artarmion_destination">Ashfield</string>
+    <string name="artarmion_destination_time">15:01</string>
+
+    <string name="berowra_platform">Berowra Platform 4</string>
+    <string name="berowra_arrival_time">14:14</string>
+    <string name="berowra_status">Late</string>
+    <string name="berowra_destination">Beverly</string>
+    <string name="berowra_destination_time">15:18</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_activity_download_file_names">
+        <item>Adele (4Mb)</item>
+        <item>Megan (5Mb)</item>
+        <item>DJ Kevin (2Mb)</item>
+    </string-array>
+</resources>
